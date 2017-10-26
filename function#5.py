@@ -10,14 +10,25 @@
 # >>> 11
 lists_num = []
 
-def avaranger():
-    num = float(input())
-    lists_num.append(num)  # Вставляем элемент в конец списка
-    middle = sum(lists_num)/len(lists_num)
+def avaranger(numbr):
+    lists_num.append(numbr)  # Вставляем элемент в конец списка
+    middle = sum(lists_num) / len(lists_num)
     print(middle)
-    return avaranger()
+    inp()
 
-avaranger()
+def inp():
+    try:
+        num = float(input())
+    except ValueError:
+        print("Введите число")
+        inp()
+
+    avaranger(num)
+# Конец функции
+inp()
+
+
+
 
 
 
