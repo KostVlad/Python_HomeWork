@@ -8,6 +8,7 @@
 # >>> 10.5
 # >>> avaranger(12) Среднее арифметическое 10, 11 и 12
 # >>> 11
+
 lists_num = []
 
 def avaranger(numbr):
